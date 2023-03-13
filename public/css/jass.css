@@ -45,4 +45,26 @@ nav .btn {
   margin-left: 25px;
 }
 
+.post-wrapper{ 
+  margin-top: 25px;
+  width: 450px;
+}
+
+.post-title {
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(236, 236, 188);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.post-content {
+  margin-top: 10px;
+  background-color: rgb(177, 233, 214);
+  padding: 15px;
+  border-radius: 25px;
+}
+
 /* ^^^ home page */
