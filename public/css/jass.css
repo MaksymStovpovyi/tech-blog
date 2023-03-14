@@ -37,14 +37,21 @@ form {
 }
 
 .btn-primary {
-margin: 25px 0 0 120px;
-
+  margin: 25px 0 0 120px;
+  cursor: pointer;
 }
+
+.btn-signup a{
+  color: black;
+  text-decoration: none;
+}
+
 .form-input-email{
   margin-top: 7px;
   position: relative;
   left: 24px;
 }
+
 .form-input-pass {
   margin-top: 7px;
 }
