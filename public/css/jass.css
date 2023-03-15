@@ -41,7 +41,7 @@ form {
   cursor: pointer;
 }
 
-.btn-signup a{
+a {
   color: black;
   text-decoration: none;
 }
@@ -90,3 +90,28 @@ nav .btn {
   position: relative;
   left: 27px;
 }
+
+/* newpost page */
+
+.newpost-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#post-title {
+  margin-top: 15px;
+}
+
+#post-text {
+  margin-top: 15px;
+}
+
+.post-btn-wrapper {
+  margin-top: 15px;
+  display: flex;
+}
+
+#post-back {
+  margin-left: 15px;
+}
+

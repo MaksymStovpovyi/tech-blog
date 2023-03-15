@@ -40,4 +40,12 @@ router.get('/signup', (req, res) => {
   }
 });
 
+router.get('/newpost', (req, res) => {
+  try {
+    res.render('newpost');
+  } catch(e) {
+    res.status(500).json(e);
+  }
+});
+
 module.exports = router;

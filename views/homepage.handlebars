@@ -1,7 +1,10 @@
 <div class="post-wrapper">
+  <button class="new-post"><a href="/newpost">new post</a></button>
   {{#each postings as |posting| }}
     <div class="post-title">
       {{posting.title}}
+      <button class="btn btn-update">update</button>
+      <button class="btn btn-delete">delete</button>
     </div>
     <div class="post-content">
       {{posting.content}}
