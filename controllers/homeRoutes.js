@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Posting } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -8,12 +8,16 @@ router.get('/', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       order: [['name', 'ASC']],
     });
+    const postingData = await Posting.findAll();
+
 
     const users = userData.map((project) => project.get({ plain: true }));
+    const postings = postingData.map((project) => project.get({ plain: true }));
 
     res.render('homepage', {
       users,
       logged_in: req.session.logged_in,
+      postings
     });
   } catch (err) {
     res.status(500).json(err);
@@ -31,7 +35,11 @@ router.get('/login', (req, res) => {
 
 // to signup
 router.get('/signup', (req, res) => {
-  res.render('signup');
+  try {
+    res.render('signup');
+  } catch(e) {
+    res.status(500).json(e);
+  }
 });
 
 module.exports = router;

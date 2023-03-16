@@ -1,10 +1,14 @@
-{{#each users as |user| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{user.name}}</h2>
-  </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
-  </div>
+<div class="post-wrapper">
+  <button class="new-post"><a href="/newpost">new post</a></button>
+  {{#each postings as |posting| }}
+    <div class="post-title">
+      {{posting.title}}
+      <button class="btn btn-delete" data-id="{{posting.id}}">delete</button>
+    </div>
+    <div class="post-content">
+      {{posting.content}}
+    </div>
+  {{/each}}
+
+  {{!-- <script src="/js/delete-post.js"></script> --}}
 </div>
-{{/each}}
