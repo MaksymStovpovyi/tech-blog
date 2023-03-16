@@ -4,6 +4,7 @@
   {{#each postings as |posting| }}
     <div class="post-title">
       {{posting.title}}
+      {{!-- <button class="btn btn-update" data-id="{{posting.id}}">update</button> --}}
       <button class="btn btn-delete" data-id="{{posting.id}}">delete</button>
     </div>
     <div class="post-content">
@@ -12,4 +13,5 @@
   {{/each}}
 
   <script src="/js/delete-post.js"></script>
+  <script src="/js/to-update.js"></script>
 </div>

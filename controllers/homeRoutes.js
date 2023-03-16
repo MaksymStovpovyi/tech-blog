@@ -51,4 +51,13 @@ router.get('/newpost', (req, res) => {
   }
 });
 
+// to update post
+router.get('/update/:id', (req, res) => {
+  try {
+    res.render('update');
+  } catch(e) {
+    res.status(500).json(e);
+  }
+});
+
 module.exports = router;
