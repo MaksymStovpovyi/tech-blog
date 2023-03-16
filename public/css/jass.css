@@ -44,3 +44,44 @@
   width: 45px;
   margin-left: 10px;
 }
+
+#to-signup a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn-primary {
+ cursor: pointer;
+}
+
+/* signup */
+.signup-wrapper h2 {
+
+}
+
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+ }
+
+.signup-form {
+  margin-top: 25px;
+}
+
+#email-signup {
+  margin-top: 7px;
+  position: relative;
+  left: 24px;
+}
+
+#login-signup {
+  margin-top: 7px;
+  position: relative;
+  left: 27px;
+}
+
+.signup-btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
