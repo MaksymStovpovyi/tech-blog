@@ -14,6 +14,9 @@ signupBtn.addEventListener('click', async (e) => {
       password
     }),
     headers: { 'Content-Type': 'application/json' }
+  }).then(() => {
+    window.location.href = '/';
+    alert('Are you registered');
   });
   
 })

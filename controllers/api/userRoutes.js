@@ -48,7 +48,6 @@ router.post('/signup', async (req, res) => {
   try {
     const newUser = Object.assign({}, req.body);
     const response = await User.create(newUser);
-
     res.status(200).json(response);
   } catch(e) {
     console.log('err')
