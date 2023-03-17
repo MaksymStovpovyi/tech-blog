@@ -124,8 +124,7 @@ margin-left: 80%;
 }
 
 .btn-delete {
-  position: relative;
-  right: -475px;
+  margin-left: 35px;
 }
 
 /* newpost page */
